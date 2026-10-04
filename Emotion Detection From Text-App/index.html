@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection from Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <h1>😊 Emotion Detection from Text</h1>
+
+    <p class="subtitle">
+        Enter a message and detect the emotion behind it
+    </p>
+
+    <textarea id="textInput"
+        placeholder="Enter your text here..."></textarea>
+
+    <div class="buttons">
+        <button onclick="detectEmotion()">Detect Emotion</button>
+        <button class="clear-btn" onclick="clearText()">Clear</button>
+    </div>
+
+    <div class="result">
+
+        <h2>Emotion Result</h2>
+
+        <div id="emoji">😐</div>
+
+        <p id="resultText">
+            Enter some text to detect the emotion.
+        </p>
+
+    </div>
+
+    <div class="examples">
+
+        <h3>Try Examples</h3>
+
+        <button onclick="setExample('I am very happy today!')">
+            😊 Happy
+        </button>
+
+        <button onclick="setExample('I am very sad and lonely.')">
+            😢 Sad
+        </button>
+
+        <button onclick="setExample('I am so angry about this problem!')">
+            😡 Angry
+        </button>
+
+        <button onclick="setExample('I am scared of going alone.')">
+            😨 Fear
+        </button>
+
+        <button onclick="setExample('Wow! This is completely amazing!')">
+            😲 Surprise
+        </button>
+
+    </div>
+
+    <div class="info">
+
+        <h3>How It Works</h3>
+
+        <p>
+            The application checks the entered text for emotion-related
+            keywords and identifies emotions such as happiness, sadness,
+            anger, fear, surprise, and love.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
